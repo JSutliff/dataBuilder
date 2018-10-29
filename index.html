@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,81 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/css/uikit.min.css" />
   <title>Database Builder</title>
 </head>
-<body>
-    <div class="uk-container">
 
-      <h1>Hello World</h1>
-    </div>
+<body>
+  <div class="uk-container">
+
+    <form>
+      <fieldset class="uk-fieldset">
+
+        <legend class="uk-legend">Enter Store Information</legend>
+
+        <!-- Business Name -->
+        <div class="uk-margin">
+          <input class="uk-input" id="companyName" type="text" placeholder="Name">
+        </div>
+
+        <!-- URL -->
+        <div class="uk-margin">
+          <input class="uk-input" id="companyUrl" type="text" placeholder="Company URL">
+        </div>
+
+        <!-- IMG URL -->
+        <div class="uk-margin">
+          <input class="uk-input" id="imgUrl" type="text" placeholder="IMG URL">
+        </div>
+
+        <!-- Yelp ID -->
+        <div class="uk-margin">
+          <input class="uk-input" id="yelpId" type="text" placeholder="Yelp ID">
+        </div>
+
+        <div class="uk-margin">
+          <textarea class="uk-textarea" id="description" rows="5" placeholder="Description"></textarea>
+        </div>
+
+        <!-- Store Hours -->
+        <div class="uk-margin">
+            <h3>Store Hours</h3>
+            <h5>Opening</h5>
+            <div class="uk-margin">
+            <select class="uk-select">
+                <option>7:00am</option>
+                <option>8:00am</option>
+                <option>9:00am</option>
+                <option>10:00am</option>
+                <option>11:00am</option>
+                <option>12:00pm</option>
+            </select>
+        </div>
+
+        <h5>Closing</h5>
+            <div class="uk-margin">
+            <select class="uk-select">
+                <option>3:00pm</option>
+                <option>4:00pm</option>
+                <option>5:00pm</option>
+                <option>6:00pm</option>
+                <option>7:00pm</option>
+                <option>8:00pm</option>
+                <option>9:00pm</option>
+                <option>10:00pm</option>
+            </select>
+        </div>
+        </div>
+
+        <h3>Categories (check all that apply)</h3>
+        <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+          <label><input class="uk-checkbox" type="checkbox"> Womens Apparel</label>
+          <label><input class="uk-checkbox" type="checkbox"> Womens Shoes</label>
+          <label><input class="uk-checkbox" type="checkbox"> Mens Apparel</label>
+          <label><input class="uk-checkbox" type="checkbox"> Mens Shoes</label>
+        </div>
+
+      </fieldset>
+      <button class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom">Submit</button>
+    </form>
+  </div>
 </body>
+
 </html>
