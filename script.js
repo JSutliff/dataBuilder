@@ -1,8 +1,26 @@
-const submitButton = document.getElementById('submitButton');
-const companyName = document.getElementById('companyName');
+// check for values
+  // if userName === admin && password === 'kgb111'
+  // display form.html
+    // else invalid password model 
 
-submitButton.addEventListener('click', (e) => {
-  e.preventDefault();
-  console.log(companyName.value)
-})
+    // on form submit 
+      //check for duplicate entry in db
+      //if no duplicate enter form info to db
+      // {
+      //   buisnessName: ' ',
+      //   url: ' ',
+      //   imgUrl: ' ',
+      //   yelpId: 423412,
+      //   hours: {
+      //   opening: 9
+      //   closing: 6
+      // }
+      //   categories: {
+            // mensShoes: true,
+            // womensShoes: false,
+            // mensClothing: false
+      //}
+      // }
+
+    // api end routes to retun db data 
 
